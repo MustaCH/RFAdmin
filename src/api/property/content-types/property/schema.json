@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "Property",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks",
+      "required": true
+    },
+    "availability": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "operation": {
+      "type": "enumeration",
+      "enum": [
+        "RENT",
+        "SELL"
+      ]
+    },
+    "price": {
+      "displayName": "price",
+      "type": "component",
+      "repeatable": false,
+      "component": "currency.price",
+      "required": true
+    },
+    "expenses": {
+      "displayName": "expenses",
+      "type": "component",
+      "repeatable": false,
+      "component": "price.expenses"
+    },
+    "specifications": {
+      "displayName": "specifications",
+      "type": "component",
+      "repeatable": false,
+      "component": "specs.specifications",
+      "required": true
+    }
+  }
+}

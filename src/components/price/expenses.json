@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_price_expenses",
+  "info": {
+    "displayName": "expenses"
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "integer"
+    },
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "USD",
+        "ARS"
+      ]
+    }
+  }
+}

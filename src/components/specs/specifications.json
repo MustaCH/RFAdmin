@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_specs_specifications",
+  "info": {
+    "displayName": "specifications",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "surface": {
+      "displayName": "surface",
+      "type": "component",
+      "repeatable": false,
+      "component": "specs.surface",
+      "required": true
+    },
+    "age": {
+      "type": "integer"
+    },
+    "bathrooms": {
+      "type": "integer"
+    },
+    "toilets": {
+      "type": "integer"
+    },
+    "rooms": {
+      "type": "integer"
+    },
+    "garage": {
+      "type": "integer"
+    },
+    "floor": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_specs_surfaces",
+  "info": {
+    "displayName": "surface"
+  },
+  "options": {},
+  "attributes": {
+    "surfaceTotal": {
+      "type": "integer"
+    },
+    "surfaceCover": {
+      "type": "integer"
+    },
+    "surfaceSemicover": {
+      "type": "integer"
+    },
+    "surfaceLand": {
+      "type": "integer"
+    }
+  }
+}
