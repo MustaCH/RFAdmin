@@ -6,13 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "surface": {
-      "displayName": "surface",
-      "type": "component",
-      "repeatable": false,
-      "component": "specs.surface",
-      "required": true
-    },
     "age": {
       "type": "integer"
     },
@@ -30,6 +23,12 @@
     },
     "floor": {
       "type": "integer"
+    },
+    "bedrooms": {
+      "type": "integer"
+    },
+    "professional": {
+      "type": "boolean"
     }
   }
 }

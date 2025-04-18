@@ -1,7 +1,8 @@
 {
   "collectionName": "components_price_expenses",
   "info": {
-    "displayName": "expenses"
+    "displayName": "Price",
+    "description": ""
   },
   "options": {},
   "attributes": {

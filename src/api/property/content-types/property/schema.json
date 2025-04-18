@@ -41,13 +41,6 @@
         "SELL"
       ]
     },
-    "price": {
-      "displayName": "price",
-      "type": "component",
-      "repeatable": false,
-      "component": "currency.price",
-      "required": true
-    },
     "expenses": {
       "displayName": "expenses",
       "type": "component",
@@ -59,6 +52,26 @@
       "type": "component",
       "repeatable": false,
       "component": "specs.specifications",
+      "required": true
+    },
+    "location": {
+      "displayName": "location",
+      "type": "component",
+      "repeatable": false,
+      "component": "location.location",
+      "required": true
+    },
+    "price": {
+      "type": "component",
+      "repeatable": false,
+      "component": "price.expenses",
+      "required": true
+    },
+    "surface": {
+      "displayName": "surface",
+      "type": "component",
+      "repeatable": false,
+      "component": "specs.surface",
       "required": true
     }
   }

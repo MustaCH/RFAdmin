@@ -11,7 +11,7 @@
     "surfaceCover": {
       "type": "integer"
     },
-    "surfaceSemicover": {
+    "surfaceSemiCover": {
       "type": "integer"
     },
     "surfaceLand": {

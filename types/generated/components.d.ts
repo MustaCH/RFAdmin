@@ -1,20 +1,24 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
-export interface CurrencyPrice extends Struct.ComponentSchema {
-  collectionName: 'components_currency_prices';
+export interface LocationLocation extends Struct.ComponentSchema {
+  collectionName: 'components_location_locations';
   info: {
-    displayName: 'price';
+    displayName: 'location';
   };
   attributes: {
-    currency: Schema.Attribute.Enumeration<['USD', 'ARS']>;
-    price: Schema.Attribute.Integer;
+    city: Schema.Attribute.String;
+    neighborhood: Schema.Attribute.String;
+    number: Schema.Attribute.String;
+    province: Schema.Attribute.String;
+    street: Schema.Attribute.String;
   };
 }
 
 export interface PriceExpenses extends Struct.ComponentSchema {
   collectionName: 'components_price_expenses';
   info: {
-    displayName: 'expenses';
+    description: '';
+    displayName: 'Price';
   };
   attributes: {
     currency: Schema.Attribute.Enumeration<['USD', 'ARS']>;
@@ -31,11 +35,11 @@ export interface SpecsSpecifications extends Struct.ComponentSchema {
   attributes: {
     age: Schema.Attribute.Integer;
     bathrooms: Schema.Attribute.Integer;
+    bedrooms: Schema.Attribute.Integer;
     floor: Schema.Attribute.Integer;
     garage: Schema.Attribute.Integer;
+    professional: Schema.Attribute.Boolean;
     rooms: Schema.Attribute.Integer;
-    surface: Schema.Attribute.Component<'specs.surface', false> &
-      Schema.Attribute.Required;
     toilets: Schema.Attribute.Integer;
   };
 }
@@ -48,7 +52,7 @@ export interface SpecsSurface extends Struct.ComponentSchema {
   attributes: {
     surfaceCover: Schema.Attribute.Integer;
     surfaceLand: Schema.Attribute.Integer;
-    surfaceSemicover: Schema.Attribute.Integer;
+    surfaceSemiCover: Schema.Attribute.Integer;
     surfaceTotal: Schema.Attribute.Integer;
   };
 }
@@ -56,7 +60,7 @@ export interface SpecsSurface extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
-      'currency.price': CurrencyPrice;
+      'location.location': LocationLocation;
       'price.expenses': PriceExpenses;
       'specs.specifications': SpecsSpecifications;
       'specs.surface': SpecsSurface;

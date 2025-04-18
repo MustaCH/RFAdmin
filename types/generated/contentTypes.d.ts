@@ -400,11 +400,15 @@ export interface ApiPropertyProperty extends Struct.CollectionTypeSchema {
       'api::property.property'
     > &
       Schema.Attribute.Private;
+    location: Schema.Attribute.Component<'location.location', false> &
+      Schema.Attribute.Required;
     operation: Schema.Attribute.Enumeration<['RENT', 'SELL']>;
-    price: Schema.Attribute.Component<'currency.price', false> &
+    price: Schema.Attribute.Component<'price.expenses', false> &
       Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     specifications: Schema.Attribute.Component<'specs.specifications', false> &
+      Schema.Attribute.Required;
+    surface: Schema.Attribute.Component<'specs.surface', false> &
       Schema.Attribute.Required;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
