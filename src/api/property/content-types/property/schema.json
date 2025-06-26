@@ -10,6 +10,7 @@
   "options": {
     "draftAndPublish": true
   },
+  "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "string"
@@ -20,8 +21,8 @@
     },
     "availability": {
       "type": "boolean",
-      "default": true,
-      "required": true
+      "required": true,
+      "default": true
     },
     "images": {
       "type": "media",
@@ -34,6 +35,9 @@
         "audios"
       ]
     },
+    "Video": {
+      "type": "string"
+    },
     "operation": {
       "type": "enumeration",
       "enum": [
@@ -42,36 +46,32 @@
       ]
     },
     "expenses": {
-      "displayName": "expenses",
       "type": "component",
-      "repeatable": false,
-      "component": "price.expenses"
+      "component": "price.expenses",
+      "repeatable": false
     },
     "specifications": {
-      "displayName": "specifications",
       "type": "component",
-      "repeatable": false,
       "component": "specs.specifications",
+      "repeatable": false,
       "required": true
     },
     "location": {
-      "displayName": "location",
       "type": "component",
-      "repeatable": false,
       "component": "location.location",
+      "repeatable": false,
       "required": true
     },
     "price": {
       "type": "component",
-      "repeatable": false,
       "component": "price.expenses",
+      "repeatable": false,
       "required": true
     },
     "surface": {
-      "displayName": "surface",
       "type": "component",
-      "repeatable": false,
       "component": "specs.surface",
+      "repeatable": false,
       "required": true
     }
   }
